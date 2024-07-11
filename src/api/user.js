@@ -1,5 +1,10 @@
 import axios from "../../axios";
 
+
+const demo = (idUser, data) => {
+  return axios.post(`/api/user/editUser/${idUser}`, data);
+};
+
 const updateUser = (idUser, data) => {
   return axios.post(`/api/user/editUser/${idUser}`, data);
 };
@@ -58,4 +63,5 @@ export {
   updateUser,
   bannedUser,
   getListUsersNotBanned,
+  demo
 };
