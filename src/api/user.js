@@ -9,7 +9,7 @@ const updateUser = (idUser, data) => {
   return axios.post(`/api/user/editUser/${idUser}`, data);
 };
 const getAllUsers = () => {
-  return axios.get("/api/user/getListUsers");
+    return axios.get("/api/user/getListUsers");
 };
 
 const getListUsersNotBanned = () => {
@@ -21,7 +21,7 @@ const bannedUser = (idUser) => {
 };
 
 const createUser = (formData) => {
-  return axios.post("/api/user/addNew", formData);
+    return axios.post("/api/user/addNew", formData);
 };
 
 const apiLogin = (username, password) => {
@@ -51,11 +51,11 @@ const apiCheckOut = (idUser, data) => {
     method: "post",
     data,
   });
-};
+  };
 
 export {
-  getAllUsers,
-  createUser,
+    getAllUsers,
+    createUser,
   apiLogin,
   deleteCartUser,
   getCartUser,
