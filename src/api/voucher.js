@@ -1,5 +1,9 @@
 import axios from "../../axios";
 
+const demoVoucher = () => {
+  return axios.get("/api/voucher/getlistvouchernotdelete")
+}
+
 const getlistvouchernotdelete = () => {
   return axios.get("/api/voucher/getlistvouchernotdelete")
 }
@@ -37,4 +41,5 @@ export {
   addNewVoucher ,
   deleteVoucher , 
   UpdateVoucher ,
+  demoVoucher
 };

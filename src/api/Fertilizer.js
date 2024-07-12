@@ -1,5 +1,9 @@
 import axios from "../../axios";
 
+const demo = async () => {
+  return await axios.get("/api/fertilizer/listfer?numberOfPage=0&sizeOfPage=5");
+};
+
 const getAll = async () => {
   return await axios.get("/api/fertilizer/listfer?numberOfPage=0&sizeOfPage=5");
 };
@@ -96,4 +100,5 @@ export {
   deleteFertilizer,
   getAllPagi,
   apiFilterBrand,
+  demo
 };

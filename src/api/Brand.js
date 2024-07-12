@@ -1,5 +1,9 @@
 import axios from "../../axios";
 
+const demo_time_2 = () => {
+  return axios.get("/api/brand/getlistbrand");
+};
+
 const getAllBrand = () => {
   return axios.get("/api/brand/getlistbrand");
 };
@@ -29,4 +33,4 @@ const updateBrand = (idBrand, data) => {
   return axios.put(`/api/brand/editbrand/${idBrand}`, data);
 };
 
-export { getAllBrand, findByName, createBrand, deleteBrand, updateBrand , getAllBrandNotDetele };
+export { getAllBrand, findByName, createBrand, deleteBrand, updateBrand , getAllBrandNotDetele , demo_time_2 };
